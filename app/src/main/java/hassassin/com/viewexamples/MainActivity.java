@@ -20,7 +20,7 @@ public class MainActivity extends ActionBarActivity  {
     }
 
     public void goNext(View view) {
-        Intent i = new Intent(this, TabAdapter.class);
+        Intent i = new Intent(this, ViewFlipAdapter.class);
         startActivity(i);
 
     }

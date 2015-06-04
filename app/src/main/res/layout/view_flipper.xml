@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#424242"
+            android:textSize="30sp"
+            android:text="View Flipper Demo"
+            android:id="@+id/tv_title_view"/>
+        <ViewFlipper
+            android:id="@+id/vf_jaripeo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <!-- Vista para la primera ventana -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:text="Screen 1"
+                    android:textColor="#191975"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/imgv_example1"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="450dp"
+                    android:layout_height="450dp"
+                    android:src="@drawable/jaripeo1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Screen 2"
+                    android:textColor="#191975"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/imgv_example2"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="450dp"
+                    android:layout_height="450dp"
+                    android:src="@drawable/jaripero3"/>
+            </LinearLayout>
+
+        </ViewFlipper>
+
+</LinearLayout>

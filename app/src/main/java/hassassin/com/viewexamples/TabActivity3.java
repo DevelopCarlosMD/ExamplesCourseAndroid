@@ -15,7 +15,7 @@ public class TabActivity3 extends Activity {
         super.onCreate(savedInstanceState);
         TextView tv3 = new TextView(this);
         tv3.setTextSize(25);
-        tv3.setGravity(Gravity.CENTER_VERTICAL);
+        tv3.setGravity(Gravity.CENTER);
         tv3.setText("This is Tab3 Activity");
         setContentView(tv3);
     }
